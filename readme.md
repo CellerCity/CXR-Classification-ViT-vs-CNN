@@ -103,7 +103,7 @@ To reproduce the experiments:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/CellerCity/CXR-Classification-ViT-vs-CNN.git](https://github.com/CellerCity/CXR-Classification-ViT-vs-CNN.git)
+    git clone https://github.com/CellerCity/CXR-Classification-ViT-vs-CNN.git
     ```
 2.  **Dataset Setup:**
     Ensure you have the VinDr-CXR or VinDr-PCXR datasets downloaded. Update the path in the notebook variables.
