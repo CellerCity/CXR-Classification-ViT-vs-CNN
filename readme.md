@@ -22,7 +22,7 @@ We implemented a robust training pipeline including **CLAHE preprocessing** and 
 * **Multi-Label:** **CoAtNet** achieved the highest AUC of **0.7316**, slightly outperforming Swin Transformer (0.7259).
 * **Multi-Class:** **PVT** and **EfficientNet** showed the highest accuracy (~67%), highlighting the difficulty of pediatric classification compared to adult X-rays.
 
-*Full results table available in `assets/tables/Performance_Metrics.xlsx`.*
+*Full results table available in `assets/tables/Performance_Metrics.csv`.*
 
 ---
 
@@ -39,7 +39,7 @@ CXR-Classification-ViT-vs-CNN/
 │   │   ├── statistics/      # Class distribution charts
 │   │   └── preprocessing/   # Pipeline visualization
 │   ├── samples/             # Sample X-rays from the datasets
-│   └── tables/              # Raw result CSVs
+│   └── tables/              # Raw result CSV
 │
 ├── docs/                    # Full Thesis PDF
 │
