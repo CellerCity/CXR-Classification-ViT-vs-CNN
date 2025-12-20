@@ -101,13 +101,22 @@ We implemented a 3-stage preprocessing pipeline to enhance feature visibility in
 
 To reproduce the experiments:
 
-1.  **Clone the repository:**
+1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/CellerCity/CXR-Classification-ViT-vs-CNN.git
     ```
-2.  **Dataset Setup:**
-    Ensure you have the VinDr-CXR or VinDr-PCXR datasets downloaded. Update the path in the notebook variables.
-3.  **Run Experiment:**
+
+2.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Dataset Setup (Crucial):**
+    * **Download:** Obtain the **VinDr-CXR** and **VinDr-PCXR** datasets.
+        * *Note: VinDr-PCXR requires signing a data use agreement for access.*
+    * **Update Paths:** The notebooks currently use Kaggle directory paths. You **must update the `train_data` and/or `test_data` variables** in the first cell of the notebooks to point to your local dataset location.
+
+4.  **Run Experiment:**
     Open any notebook in `notebooks/` (e.g., `VinDr_CXR/Swin_CXR_Unbalanced_Multilabel.ipynb`). The training loop is self-contained.
     * *Note: For ensemble inference (combining CoAtNet + Swin), refer to `notebooks/Ensemble_CoAtNet_Swin.ipynb`.*
 
