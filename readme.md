@@ -9,7 +9,7 @@ Our findings indicate that while CNNs (like CoAtNet) excel in capturing fine-gra
 
 ## 🚀 Key Results
 
-We implemented a robust training pipeline including **CLAHE preprocessing** and **Albumentations** for data augmentation.
+We implemented a robust training pipeline including **CLAHE preprocessing** for data augmentation.
 
 ### 1. Adult Dataset (VinDr-CXR) - Multi-Label
 | Model | Accuracy | AUC | Precision |
