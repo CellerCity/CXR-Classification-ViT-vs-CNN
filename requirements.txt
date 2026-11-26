@@ -1,9 +1,20 @@
-torch>=2.0.0
-torchvision>=0.15.0
-numpy
-pandas
-matplotlib
-scikit-learn
-opencv-python
-timm
-tqdm
+# Tested on Kaggle (Python 3.10, NVIDIA T4 GPU), March-April 2024.
+# Pinned versions are the ones the notebooks actually ran with.
+
+torch==2.1.2
+torchvision==0.16.2
+timm>=0.9                  # pretrained tags such as coatnet_3_rw_224.sw_in12k need timm >= 0.9
+monai==1.3.0               # transforms, DataLoader, UNETR blocks
+numpy>=1.24,<2.0           # notebooks use np.Inf, which was removed in NumPy 2.0
+pandas==2.2.1
+scikit-learn>=1.2
+opencv-python>=4.8         # CLAHE
+pydicom>=2.3,<3.0          # notebooks use pydicom.read_file, which was removed in pydicom 3.0
+matplotlib>=3.7
+seaborn>=0.12
+tqdm>=4.66
+thop                       # FLOPs / parameter counting
+efficientnet_pytorch       # only needed for the EfficientNet cell in Model_architectures.ipynb
+
+# Optional: only if pydicom cannot decode some compressed DICOMs
+# pylibjpeg pylibjpeg-libjpeg python-gdcm
